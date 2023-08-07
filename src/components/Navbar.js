@@ -9,16 +9,16 @@ const Navbar = () => {
 
   return (
     <Menu inverted borderless style={{padding: "0.3rem", marginBottom: "20px"}} attached>
-        <Container>
-            <Menu.Item name='home'>
-                <Link to='/'>
-                    <Image size='mini' src={logo}/>
-                </Link>
+        <Container >
+            <Menu.Item position='right' name='home'>
+                <Button size='mini' primary onClick={()=>navigate('/')}>
+                    View data
+                </Button>
             </Menu.Item>
             <Menu.Item>
-                <h2>CRUD Operations</h2>
+                <h2>CRUD</h2>
             </Menu.Item>
-            <Menu.Item position='right'>
+            <Menu.Item position='left'>
                 <Button size='mini' primary onClick={()=>navigate('/add')}>
                     Add User
                 </Button>

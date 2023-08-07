@@ -134,7 +134,7 @@ const AddEditUser = () => {
                   <>
                   <h2>{id ? "Update User" : "Add User"}</h2>
                   <Form onSubmit={handleSubmit}>
-                    <Form.Input 
+                    <Form.Input
                       label="Name"
                       error={errors.name ? {content: errors.name}:null}
                       placeholder="Enter name" 
